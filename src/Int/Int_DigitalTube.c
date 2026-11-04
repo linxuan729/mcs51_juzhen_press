@@ -10,17 +10,17 @@ void Int_DigitalTube_DisplayNum(u32 num)
 {
 
     u16 i,j;
-    if (num == 0)
-    {
-        s_digital_buffer[7] = s_digital_codes[0];
-        return;
-    }
-
     j = 0;
     while(j < 8)
     {
         s_digital_buffer[j] = 0;
         j++;
+    }
+
+    if (num == 0)
+    {
+        s_digital_buffer[7] = s_digital_codes[0];
+        return;
     }
 
     i = 7;

@@ -7,11 +7,13 @@ void main(void)
     Int_DigitalTube_Init();
     while(1)
     {
-        u8 key = Int_MatrixKey_CheckKey();
+        u8 key;
+
+        Int_DigitalTube_Refresh();
+        key = Int_MatrixKey_CheckKey();
         if (key != 0)
         {
             Int_DigitalTube_DisplayNum(key);
-            Int_DigitalTube_Refresh();
         }
     }
 }
