@@ -42,11 +42,11 @@ void Int_DigitalTube_Init(void)
 
 void Int_DigitalTube_DisplaySingle(u8 dig, u8 dat){
     P0 = 0;
-    P0 = dat;
 
     P1 &= ~0x38;
     P1 |= (dig << 3);
-    
+
+    P0 = dat;
 }
 
 void Int_DigitalTube_Refresh(void)

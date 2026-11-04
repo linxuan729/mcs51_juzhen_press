@@ -46,5 +46,8 @@
             "ms-vscode.vscode-serial-monitor",
             "cl.stm8-debug"
         ]
-    }
+	},
+	"trae": {
+		"workspaceId": "e151962b05db859bbd596de62778d366"
+	}
 }
